@@ -21,6 +21,6 @@ conectarDB();
 app.use("/Users", require("./controllers/ControllerUserClient"));
 app.use("/UsersTraders", require("./controllers/ControllerUserTrader"));
 
-app.listen(port, () => {
+app.listen(port, cors(), () => {
     console.log("el servidor corre en el puerto", port);
 })
