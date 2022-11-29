@@ -8,7 +8,7 @@ const app = express();
 port=5000;
 
 //permite la conexion de expresss-angular
-const DIRECTORIO_PERMITIDO_CORS = "https://front-traders.vercel.app/Trader/loginTrader";
+const DIRECTORIO_PERMITIDO_CORS = "https://front-traders.vercel.app/";
 app.use(cors({
   origin: DIRECTORIO_PERMITIDO_CORS
 }));
