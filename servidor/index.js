@@ -23,6 +23,6 @@ conectarDB();
 app.use("/Users", require("./controllers/ControllerUserClient"));
 app.use("/UsersTraders", require("./controllers/ControllerUserTrader"));
 
-app.listen(5000, function () {
-    console.log('CORS-enabled web server listening on port',5000)
-  })
+app.listen(port, cors(), () => {
+    console.log("el servidor corre en el puerto", port);
+})
