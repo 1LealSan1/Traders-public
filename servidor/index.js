@@ -8,7 +8,6 @@ const app = express();
 port=5000;
 
 //permite la conexion de expresss-angular
-app.use(cors())
  
 //permitimos el uso de json
 app.use(express.json());
@@ -19,6 +18,6 @@ conectarDB();
 app.use("/Users", require("./controllers/ControllerUserClient"));
 app.use("/UsersTraders", require("./controllers/ControllerUserTrader"));
 
-app.listen(port, cors(), () => {
+app.listen(port, () => {
     console.log("el servidor corre en el puerto", port);
 })
