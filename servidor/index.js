@@ -7,11 +7,7 @@ const app = express();
 //asignamos puerto
 port=5000;
 
-//permite la conexion de expresss-angular
-const DIRECTORIO_PERMITIDO_CORS = "https://front-traders.vercel.app/";
-app.use(cors({
-  origin: DIRECTORIO_PERMITIDO_CORS
-}));
+app.use(cors());
  
 //permitimos el uso de json
 app.use(express.json());
