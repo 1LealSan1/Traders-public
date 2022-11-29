@@ -10,10 +10,6 @@ port=5000;
 //permite la conexion de expresss-angular
 app.use(cors())
  
-app.get('/products/:id', function (req, res, next) {
-  res.json({msg: 'This is CORS-enabled for all origins!'})
-})
-
 //permitimos el uso de json
 app.use(express.json());
 
